@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belisa Uwayo - Student Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+<header>
+    <div class="header-content">
+        <h1>Belisa Uwayo</h1>
+        <p>BSc Information Technology - Mulungushi University</p>
+        <p class="intro">Passionate Information Technology student learning Web Technologies, programming and problem solving. Welcome to my interactive portfolio!</p>
+        <a href="#projects" class="btn">View My Projects</a>
+        <button id="theme-btn" class="btn secondary">Switch to Dark Mode</button>
+    </div>
+</header>
+
+<nav id="main-nav">
+    <button id="nav-toggle">☰ Menu</button>
+    <ul id="nav-links">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#learning">Learning Plan</a></li>
+        <li><a href="#gallery">Photos</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>My name is Belisa Uwayo, a dedicated student at Mulungushi University pursuing a Bachelors Information Technology. I am in my second year and I have developed a strong interest in Web Technologies, Software Development, and Database Systems. I enjoy learning how the internet works and how to build useful websites that solve real African problems. My goal is to become a full-stack developer and contribute to technology growth in Africa. This website demonstrates my progress in HTML5, CSS3 and JavaScript from Activity 2 to Activity 3.</p>
+    </section>
+
+    <section id="hobbies">
+        <h2>My Hobbies</h2>
+        <ul>
+            <li><strong>Coding & Learning Tech:</strong> Building small websites and practicing Java programming.</li>
+            <li><strong>Reading:</strong> Reading tech blogs and inspirational books in my free time.</li>
+            <li><strong>Music & Community:</strong> Listening to music and participating in university tech clubs.</li>
+        </ul>
+    </section>
+
+    <section id="learning">
+        <h2>My Learning Plan</h2>
+        <p>My plan for this semester to improve my web development skills:</p>
+        <ol>
+            <li>Master HTML5 semantic structure and forms.</li>
+            <li>Practice CSS layout with Flexbox and responsive media queries.</li>
+            <li>Learn JavaScript DOM manipulation and form validation.</li>
+        </ol>
+        <table>
+            <thead>
+                <tr><th>Skill</th><th>Status</th><th>Target Date</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>HTML5 & CSS3</td><td>In Progress</td><td>Oct 2026</td></tr>
+                <tr><td>JavaScript Basics</td><td>Started</td><td>Nov 2026</td></tr>
+                <tr><td>Git & GitHub Deployment</td><td>Learning</td><td>Dec 2026</td></tr>
+            </tbody>
+        </table>
+        <div class="calculator-box">
+            <h3>Study Hours Calculator</h3>
+            <label for="hours">Hours per day:</label>
+            <input type="number" id="hours" placeholder="e.g. 2">
+            <label for="days">Days per week (1-7):</label>
+            <input type="number" id="days" placeholder="e.g. 5">
+            <button id="calc-btn">Calculate Weekly Hours</button>
+            <p id="calc-result"></p>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>My Photos</h2>
+        <div class="gallery-viewer">
+            <img id="gallery-img" src="images/photo1.jpg" alt="Belisa Uwayo photo 1">
+            <p id="gallery-caption">Figure 1: Belisa Uwayo at Mulungushi University campus.</p>
+            <div class="gallery-controls">
+                <button id="prev-btn">Previous</button>
+                <button id="next-btn">Next</button>
+            </div>
+        </div>
+        <div class="all-photos">
+            <figure><img src="images/photo1.jpg" alt="Belisa Uwayo at the basketball court"><figcaption>On campus at the basketball court</figcaption></figure>
+            <figure><img src="images/photo2.jpg" alt="Belisa Uwayo with at the parking lot taking pictures"><figcaption>Taking pictures at the parking lot</figcaption></figure>
+            <figure><img src="images/photo3.jpg" alt="Belisa Uwayo after combing my hair"><figcaption>Inside the room after combing my hair</figcaption></figure>
+        </div>
+    </section>
+
+    <section id="media">
+        <h2>My Media</h2>
+        <h3>Intro Video</h3>
+        <video width="320" height="240" controls>
+            <source src="videos/intro.mp4" type="video/mp4">
+            Your browser does not support video.
+        </video>
+        <p class="media-summary">A short introduction video recorded .</p>giving an introduction about myself
+        <h3>Voice Greeting</h3>
+        <audio controls>
+            <source src="videos/voice.mp4" type="audio/mpeg">
+            Your browser does not support audio.
+        </audio>
+        <p class="media-summary">A 30-second audio greeting recorded giving an introduction of myself.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects / Skills</h2>
+        <div class="project-filter">
+            <input type="text" id="search-input" placeholder="Search projects e.g. HTML">
+            <button id="reset-filter">Reset</button>
+        </div>
+        <p id="filter-message"></p>
+        <div class="projects-grid">
+            <div class="project-card" data-name="Personal Website HTML CSS">
+                <h3>Personal Website (Activity 2)</h3>
+                <p>Built with HTML5 semantic tags, images, video and audio. Hosted locally.</p>
+                <button class="expand-btn">Show Details</button>
+                <p class="details hidden">Used header, nav, main, section, footer, figure, figcaption, table. Learned folder structure and relative paths.</p>
+            </div>
+            <div class="project-card" data-name="Customer Manager Java">
+                <h3>Customer Manager Zambia - JavaFX</h3>
+                <p>Desktop app for managing customers with SQLite database.</p>
+                <button class="expand-btn">Show Details</button>
+                <p class="details hidden">Used JavaFX, Maven, and SQLite. Implemented CRUD operations and GitHub deployment.</p>
+            </div>
+            <div class="project-card" data-name="Interactive Portfolio JavaScript">
+                <h3>Interactive Portfolio (Activity 3)</h3>
+                <p>Enhanced with JavaScript validation, gallery viewer, theme switch and calculator.</p>
+                <button class="expand-btn">Show Details</button>
+                <p class="details hidden">Added js/script.js with 4 features: form validation, gallery, theme switch, study hours calculator. Deployed on Render.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <p><strong>Browser demonstration only — no message is sent.</strong></p>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <p class="error" id="name-error"></p>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <p class="error" id="email-error"></p>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <p class="error" id="message-error"></p>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="form-preview" class="hidden"></div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Belisa Uwayo - Mulungushi University</p>
+    <p><a href="https://github.com/YOUR_USERNAME/belisa-portfolio" id="github-link">View Source on GitHub</a></p>
+</footer>
+</body>
+</html>
